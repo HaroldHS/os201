@@ -1,0 +1,22 @@
+Script started on Thu 28 May 2020 09:10:13 PM WIB
+harold.hotma@badak:~$ PS1="$ "
+$ echo $GitHubUser
+HaroldHS16
+$ echo $PSTAMP
+TMP1="$(date +%y%m%d-%H%M%S)"; TMP2="$(echo $TMP1-$GitHubUser-${PWD##*/}|sha1sum|cut -c1-4)"; echo "$TMP1-$TMP2-${PWD##*/}/> ";
+$ eval $PSTAMP
+200528-211058-ef46-harold.hotma/>
+$ PS1="\$(eval \$PSTAMP)"
+200528-211128-0ba2-harold.hotma/> date
+Thu May 28 21:11:35 WIB 2020
+200528-211135-6856-harold.hotma/> gpg2 --list-keys
+/home/fasilkom/mahasiswa/h/harold.hotma/.gnupg/pubring.gpg
+----------------------------------------------------------
+pub   4096R/23EAC6D4 2020-05-28
+uid       [ultimate] Harold Hotma Sibuea <haroldhs.hh@gmail.com>
+sub   4096R/6AB749B5 2020-05-28
+
+200528-211144-eaed-harold.hotma/> exit
+exit
+
+Script done on Thu 28 May 2020 09:11:54 PM WIB
